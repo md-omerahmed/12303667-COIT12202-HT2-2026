@@ -12,7 +12,8 @@ This activity focused on comparing different password hashing algorithms and imp
 A GNS3 project was created with one Ubuntu Host labelled **Target**.
 
 *Evidence:
-`Password-Hashing-12303667-network.png`
+<img width="1919" height="1019" alt="1 network week 3" src="https://github.com/user-attachments/assets/9cbf0b44-ed8a-4568-8224-942c255d928f" />
+
 
 # 3. Password Hash Algorithms
 
@@ -36,7 +37,9 @@ The prefixes identify the hashing algorithms:
 | `$6$`  | SHA-512   |
 | `$y$`  | yescrypt  |
 
-**Evidence:** `Password-Hashing-12303667-shadow.png`
+**Evidence:** 
+<img width="1899" height="1017" alt="2 network week 3" src="https://github.com/user-attachments/assets/ef82bbc3-aa00-4241-b9b0-4835329073d5" />
+
 
 ## 4. PAM Password Policies
 
@@ -60,6 +63,8 @@ After five failed authentication attempts, the account was locked for 300 second
 ```bash
 faillock --user user_test
 ```
+**Evidence:**
+<img width="1912" height="1026" alt="3 network week 3" src="https://github.com/user-attachments/assets/3848bc5f-3ab8-4977-b105-cf02bbcc5527" />
 
 ## 5. Password Cracking
 
@@ -74,7 +79,9 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 
 The testing demonstrated that MD5-crypt was faster to attack, while SHA-512 was slower and yescrypt was designed to make password cracking more computationally expensive.
 
-**Evidence:** `Password-Hashing-12303667-crack.png`
+**Evidence:** 
+<img width="1894" height="1020" alt="4 network week 3" src="https://github.com/user-attachments/assets/149628f8-5236-4ad2-b8b2-991594517c15" />
+
 
 # Analysis Questions
 
