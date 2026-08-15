@@ -21,6 +21,7 @@ The GNS3 network contained four Linux hosts connected through a switch.
 Connectivity was verified using ping.
 
 # Evidence
+
 <img width="1919" height="1079" alt="Screenshot 2026-08-13 183632" src="https://github.com/user-attachments/assets/cfa4ffe2-3882-403c-9b4c-fcac444116a1" />
 
 <img width="1919" height="1079" alt="SSH-Hardening-12303667" src="https://github.com/user-attachments/assets/ef1875e9-5f31-4ec8-ad48-8aaa45032e27" />
