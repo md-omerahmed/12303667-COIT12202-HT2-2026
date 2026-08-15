@@ -18,7 +18,11 @@ Three Linux hosts were connected through an Ethernet switch.
 | Client | 10.10.1.30/24 | Certificate verification |
 
  # Evidence
- OpenSSL-CA-12303667-network.png
+ 
+ <img width="1919" height="1079" alt="19 week 2" src="https://github.com/user-attachments/assets/a55865e6-3cc8-48c4-ac7a-8ada14b6c737" />
+
+<img width="1919" height="1079" alt="2 week 2" src="https://github.com/user-attachments/assets/aff18453-bea0-4859-b5b0-b113b58f5d4b" />
+
 
 
  # 3. Root and Intermediate CA
@@ -52,6 +56,9 @@ The CSR was signed by the Intermediate CA to produce the server certificate.
 
 A CA chain containing the Intermediate and Root certificates was also created.
 
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/0fc1817c-7577-49ed-a000-99a756a203ed" />
+
+
 # 5. Nginx HTTPS Configuration
 
 - The server certificate and CA chain were combined into a full certificate chain:
@@ -65,6 +72,10 @@ ssl_certificate /etc/ssl/certs/server-fullchain.crt;
 ssl_certificate_key /etc/ssl/private/server.key;
 
 The configuration was tested and Nginx was restarted successfully.
+
+# Evidence
+<img width="1600" height="901" alt="image" src="https://github.com/user-attachments/assets/3f4a78f5-d524-4f39-a579-d634e79fc391" />
+
 
 # 6. Certificate Verification
 
@@ -83,7 +94,8 @@ openssl verify -CAfile /tmp/root-ca.crt -untrusted /tmp/intermediate.crt /tmp/se
 This confirmed that the Server certificate could be successfully traced through the Intermediate CA to the trusted Root CA.
 
 # Evidence
-OpenSSL-CA-12303667-verify.png
+<img width="1600" height="892" alt="image" src="https://github.com/user-attachments/assets/e7207f95-45a2-42d5-a43a-c4e5b660ad0f" />
+
 
 # 7. HTTPS Testing
 
@@ -98,14 +110,16 @@ The request completed successfully, confirming that the Client trusted the certi
 openssl s_client -connect www.12303667.lab:443 -CAfile /tmp/root-ca.crt
 
 # Evidence
-OpenSSL-CA-12303667-curl.png
+<img width="1919" height="1079" alt="8 week 2" src="https://github.com/user-attachments/assets/6d0b8499-cd3f-4205-8362-f5d9edf1e770" />
+
 
 # 8. Packet Capture
 
 A packet capture was taken between the switch and Server while the Client made another HTTPS request.
 
 # Evidence
-OpenSSL-CA-12303667-tls.pcap
+<img width="1919" height="1079" alt="1 week 2" src="https://github.com/user-attachments/assets/d76acfe3-e622-4f5a-b875-76d61c7a458d" />
+
 
 The capture showed the TLS handshake and certificate exchange. However, the HTTP request content was encrypted and therefore could not be read directly from the capture.
 
