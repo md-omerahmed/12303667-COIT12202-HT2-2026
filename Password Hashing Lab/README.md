@@ -25,7 +25,7 @@ Three users were created using the same student-ID-based password but different 
 The entries were examined using:
 
 ```bash
-cat /etc/shadow | grep user_
+cat /etc/shadow | grep omer_
 ```
 
 The prefixes identify the hashing algorithms:
@@ -68,7 +68,7 @@ A second set of accounts was created with a password confirmed to exist in `rock
 John the Ripper was used to perform the dictionary attack.
 
 ```bash
-grep '^crack_' /etc/shadow > hashes.txt
+grep '^Tahsin_' /etc/shadow > hashes.txt
 john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 ```
 
