@@ -20,7 +20,9 @@ The GNS3 network contained four Linux hosts connected through a switch.
 
 Connectivity was verified using ping.
 
-Evidence: SSH-Hardening-12303667-network.png
+# Evidence
+<img width="1919" height="1079" alt="SSH-Hardening-12303667" src="https://github.com/user-attachments/assets/ef1875e9-5f31-4ec8-ad48-8aaa45032e27" />
+
 
 # 3. SSH Key Authentication
 
@@ -65,7 +67,8 @@ Password authentication was rejected.
 Root SSH login was rejected.
 
 # Evidence
-SSH-Hardening-12303667-sshd.png
+<img width="1919" height="1079" alt="SSH-Hardening-12303667 sshd" src="https://github.com/user-attachments/assets/85cd8749-db93-4aff-94ea-34def3a9358b" />
+
 
 # 5. fail2ban Protection
 fail2ban was configured to block repeated failed SSH attempts.
@@ -93,7 +96,8 @@ Repeated failed SSH attempts were generated from Bastion.
  Bastion IP 10.10.1.20 appeared in the banned IP list, confirming that fail2ban was working.
 
 # Evidence 
-SSH-Hardening-12303667-fail2ban.png
+<img width="1919" height="1079" alt="SSH-Hardening-12303667-fail2ban" src="https://github.com/user-attachments/assets/ec448ddb-bdb8-44ad-a176-0c53b83a33ff" />
+
 
 # 6. SSH Tunnelling
 
@@ -117,8 +121,10 @@ curl http://localhost:9090/
 
 # Two packet captures were saved
 
-SSH-Hardening-12303667-admin.pcap
-SSH-Hardening-12303667-internal.pcap
+<img width="1919" height="1079" alt="Screenshot 2026-08-13 184313" src="https://github.com/user-attachments/assets/5fc8e7e0-1d9a-42ab-bd57-eeb127d44155" />
+
+<img width="1919" height="1072" alt="Screenshot 2026-08-13 184333" src="https://github.com/user-attachments/assets/016ee4e4-f8fb-4f46-81f8-dcabde6b1aea" />
+
 
 # Analysis Questions
 - Why is Ed25519 recommended over RSA?
