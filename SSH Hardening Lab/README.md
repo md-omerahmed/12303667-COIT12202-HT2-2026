@@ -21,6 +21,8 @@ The GNS3 network contained four Linux hosts connected through a switch.
 Connectivity was verified using ping.
 
 # Evidence
+<img width="1919" height="1079" alt="Screenshot 2026-08-13 183632" src="https://github.com/user-attachments/assets/cfa4ffe2-3882-403c-9b4c-fcac444116a1" />
+
 <img width="1919" height="1079" alt="SSH-Hardening-12303667" src="https://github.com/user-attachments/assets/ef1875e9-5f31-4ec8-ad48-8aaa45032e27" />
 
 
@@ -96,7 +98,7 @@ Repeated failed SSH attempts were generated from Bastion.
  Bastion IP 10.10.1.20 appeared in the banned IP list, confirming that fail2ban was working.
 
 # Evidence 
-<img width="1919" height="1079" alt="SSH-Hardening-12303667-fail2ban" src="https://github.com/user-attachments/assets/ec448ddb-bdb8-44ad-a176-0c53b83a33ff" />
+<img width="1919" height="1079" alt="Screenshot 2026-08-13 183051" src="https://github.com/user-attachments/assets/f6299658-3b30-4efd-988c-37ba8ef81010" />
 
 
 # 6. SSH Tunnelling
