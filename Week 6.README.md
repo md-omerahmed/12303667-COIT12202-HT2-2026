@@ -1,3 +1,4 @@
+# WEEK 6 CLasswork
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/6278c4e5-b38d-484d-86c2-4a7ab53393a4" />
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/963976b9-9e38-4bbd-8e3c-f8c5d376a3c4" />
 <img width="940" height="558" alt="image" src="https://github.com/user-attachments/assets/633179bd-cd20-4ffa-95ed-c02df5e9dda2" />
