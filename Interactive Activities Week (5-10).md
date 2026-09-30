@@ -27,3 +27,6 @@ Activities covering Wi-Fi basics, access-point coverage planning and the WPA2 fo
 # Week 10 – Cloud Security
 An activity examining cloud service models and security responsibilities shared between providers and customers.
 <img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/573e3565-4604-4b4f-8df9-cf365dae46a0" />
+
+# Overall Reflection
+Overall, these activities helped me understand important cybersecurity concepts more clearly. I became more confident with Kerberos, firewalls, VPNs, wireless security and cloud security, while also identifying areas such as IKEv2 and IDS that I still need to practise. The practical activities were especially useful because they connected the theory with real security situations.
